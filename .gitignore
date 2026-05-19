@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Playwright
+.playwright/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Scrape debug artifacts (generated each run; keep them out of source control)
+docs/_debug.html
+docs/_endpoints.txt
