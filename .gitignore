@@ -6,14 +6,11 @@ __pycache__/
 venv/
 .env
 
-# Playwright
-.playwright/
-
 # Editors / OS
 .vscode/
 .idea/
 .DS_Store
 
 # Scrape debug artifacts (generated each run; keep them out of source control)
-docs/_debug.html
+docs/_debug.json
 docs/_endpoints.txt

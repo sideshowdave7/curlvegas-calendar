@@ -2,45 +2,71 @@
 """
 Scrape the CurlVegas calendar and write events to docs/calendar.ics.
 
-Strategy: load the page in a headless browser, intercept network responses,
-keep any JSON response that looks like a list of calendar events. This is
-much more reliable than parsing the rendered DOM because we get the same
-structured data the website itself uses.
+The calendar is a Joomla `com_facilitycalendar` component backed by
+FullCalendar. FullCalendar loads events via a POST to:
 
-If no event JSON is intercepted, we still write a valid (empty) ICS file
-and dump the page HTML to docs/_debug.html so you can troubleshoot.
+    index.php?option=com_facilitycalendar&task=calendar.getevents
+
+with the visible date range (start/end) plus calview/types params. The
+response is a JSON array of FullCalendar event objects (despite being served
+with a text/html content-type). We POST to that endpoint directly for a wide
+date window — far more reliable and faster than driving a headless browser.
+
+The raw JSON response is dumped to docs/_debug.json for troubleshooting.
 """
 
-import asyncio
 import hashlib
 import json
-import os
 import sys
+from datetime import date, timedelta
 from pathlib import Path
 
+import requests
 from dateutil import parser as date_parser
 from icalendar import Calendar, Event
-from playwright.async_api import async_playwright
 from pytz import timezone as pytz_timezone
 
-CALENDAR_URL = "https://curlvegas.com/index.php/calendar"
+BASE_URL = "https://curlvegas.com/index.php"
+EVENTS_TASK = "com_facilitycalendar&task=calendar.getevents"
 OUT_PATH = Path("docs/calendar.ics")
-DEBUG_HTML = Path("docs/_debug.html")
+DEBUG_JSON = Path("docs/_debug.json")
 DEBUG_ENDPOINTS = Path("docs/_endpoints.txt")
 LOCAL_TZ = pytz_timezone("America/Los_Angeles")  # CurlVegas is in Las Vegas
 
+# How wide a window of events to fetch, relative to today.
+DAYS_BACK = 31
+DAYS_AHEAD = 365
 
-def looks_like_events(data):
-    """Return True if data looks like a list of FullCalendar-style event objects."""
-    if not isinstance(data, list) or not data:
-        return False
-    sample = data[0]
-    if not isinstance(sample, dict):
-        return False
-    keys = {k.lower() for k in sample.keys()}
-    has_title = "title" in keys
-    has_start = "start" in keys or "start_date" in keys or "startdate" in keys
-    return has_title and has_start
+
+def fetch_events(start, end):
+    """POST to the FullCalendar events endpoint and return a list of events."""
+    url = f"{BASE_URL}?option={EVENTS_TASK}"
+    resp = requests.post(
+        url,
+        data={
+            "start": start.isoformat(),
+            "end": end.isoformat(),
+            "calview": "dayGridMonth",
+            "types": "",
+        },
+        headers={
+            "X-Requested-With": "XMLHttpRequest",
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+            ),
+        },
+        timeout=60,
+    )
+    resp.raise_for_status()
+    DEBUG_JSON.parent.mkdir(parents=True, exist_ok=True)
+    DEBUG_JSON.write_text(resp.text, encoding="utf-8")
+    DEBUG_ENDPOINTS.write_text(url + "\n", encoding="utf-8")
+
+    data = resp.json()
+    if not isinstance(data, list):
+        raise ValueError(f"Expected a JSON list of events, got {type(data).__name__}")
+    return data
 
 
 def parse_dt(value):
@@ -54,8 +80,26 @@ def parse_dt(value):
     except (ValueError, TypeError):
         return None
     if dt.tzinfo is None:
-        dt = LOCAL_TZ.localize(dt)
-    return dt
+        return LOCAL_TZ.localize(dt)
+    # Normalize fixed-offset datetimes into the named local zone so icalendar
+    # emits a proper TZID rather than ambiguous floating time.
+    return dt.astimezone(LOCAL_TZ)
+
+
+def stable_uid(raw):
+    """Derive a stable UID from event content (events carry no id of their own)."""
+    props = raw.get("extendedProps") or {}
+    if props.get("ext_id") and props["ext_id"] not in ("0", 0):
+        return f"{props.get('ext', 'ext')}-{props['ext_id']}"
+    blob = json.dumps(
+        {
+            "t": raw.get("title"),
+            "s": raw.get("start"),
+            "e": raw.get("end"),
+        },
+        sort_keys=True,
+    )
+    return hashlib.sha1(blob.encode("utf-8")).hexdigest()[:16]
 
 
 def build_calendar(events_by_uid):
@@ -69,30 +113,31 @@ def build_calendar(events_by_uid):
 
     written = 0
     for uid, raw in events_by_uid.items():
-        start = parse_dt(raw.get("start") or raw.get("start_date") or raw.get("startDate"))
+        start = parse_dt(raw.get("start"))
         if start is None:
             continue
-        end = parse_dt(raw.get("end") or raw.get("end_date") or raw.get("endDate"))
+        end = parse_dt(raw.get("end"))
+
+        props = raw.get("extendedProps") or {}
+
+        # The feed returns curling league games (ext=com_curling) with an empty
+        # title — the site fetches the matchup name from a separate component
+        # that has no public endpoint, so we fall back to a generic label.
+        title = (raw.get("title") or "").strip()
+        if not title:
+            title = "Curling Game" if props.get("ext") == "com_curling" else "Untitled"
 
         ev = Event()
-        ev.add("summary", str(raw.get("title") or "Untitled").strip())
+        ev.add("summary", title)
         ev.add("dtstart", start)
         if end is not None:
             ev.add("dtend", end)
-        location = (
-            raw.get("location")
-            or raw.get("resource")
-            or raw.get("resourceTitle")
-            or raw.get("resourceId")
-        )
-        if location:
-            ev.add("location", str(location))
 
         desc_bits = []
-        for k in ("description", "notes", "comments", "booking_use", "bookingUse"):
-            v = raw.get(k)
-            if v:
-                desc_bits.append(f"{k}: {v}")
+        for label, key in (("Description", "description"), ("Comment", "comment")):
+            v = props.get(key)
+            if v and str(v).strip():
+                desc_bits.append(f"{label}: {str(v).strip()}")
         if desc_bits:
             ev.add("description", "\n".join(desc_bits))
 
@@ -103,122 +148,27 @@ def build_calendar(events_by_uid):
     return cal, written
 
 
-def stable_uid(raw):
-    """Derive a stable UID from event content when no id is provided."""
-    if raw.get("id"):
-        return str(raw["id"])
-    blob = json.dumps(
-        {
-            "t": raw.get("title"),
-            "s": raw.get("start") or raw.get("start_date"),
-            "e": raw.get("end") or raw.get("end_date"),
-            "r": raw.get("resource") or raw.get("resourceId"),
-        },
-        sort_keys=True,
-    )
-    return hashlib.sha1(blob.encode("utf-8")).hexdigest()[:16]
+def main():
+    today = date.today()
+    start = today - timedelta(days=DAYS_BACK)
+    end = today + timedelta(days=DAYS_AHEAD)
 
+    print(f"Fetching events from {start} to {end} ...")
+    batch = fetch_events(start, end)
+    print(f"Endpoint returned {len(batch)} events.")
 
-async def main():
-    captured_batches = []
-    captured_endpoints = []
-
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(
-            user_agent=(
-                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-            )
-        )
-        page = await context.new_page()
-
-        async def on_response(response):
-            try:
-                ct = (response.headers.get("content-type") or "").lower()
-                if "json" not in ct and not response.url.lower().endswith(".json"):
-                    return
-                body = await response.text()
-                if "title" not in body.lower() or "start" not in body.lower():
-                    return
-                try:
-                    data = json.loads(body)
-                except json.JSONDecodeError:
-                    return
-                # Some endpoints wrap the list in a dict
-                if isinstance(data, dict):
-                    for key in ("events", "data", "items", "results"):
-                        if key in data and looks_like_events(data[key]):
-                            captured_batches.append(data[key])
-                            captured_endpoints.append(response.url)
-                            return
-                if looks_like_events(data):
-                    captured_batches.append(data)
-                    captured_endpoints.append(response.url)
-            except Exception as e:
-                print(f"  (response handler error: {e})", file=sys.stderr)
-
-        page.on("response", on_response)
-
-        print(f"Loading {CALENDAR_URL} ...")
-        await page.goto(CALENDAR_URL, wait_until="networkidle", timeout=60_000)
-        await page.wait_for_timeout(5000)
-
-        # If nothing came in, try nudging FullCalendar to fetch by clicking next/prev
-        if not captured_batches:
-            print("No events captured on initial load; trying navigation buttons...")
-            for selector in [
-                "button.fc-next-button",
-                "button.fc-prev-button",
-                "button.fc-today-button",
-                "button.fc-dayGridMonth-button",
-                "button.fc-listMonth-button",
-            ]:
-                try:
-                    locator = page.locator(selector)
-                    if await locator.count():
-                        await locator.first.click(timeout=2000)
-                        await page.wait_for_timeout(2500)
-                        if captured_batches:
-                            break
-                except Exception:
-                    pass
-
-        # Save debug snapshot regardless — small and very helpful if scraping breaks
-        DEBUG_HTML.parent.mkdir(parents=True, exist_ok=True)
-        try:
-            html = await page.content()
-            DEBUG_HTML.write_text(html, encoding="utf-8")
-        except Exception:
-            pass
-
-        await browser.close()
-
-    # De-dupe and merge across all captured batches
+    # De-dupe (the endpoint can repeat multi-resource events across resources)
     events_by_uid = {}
-    for batch in captured_batches:
-        for raw in batch:
-            if not isinstance(raw, dict):
-                continue
+    for raw in batch:
+        if isinstance(raw, dict):
             events_by_uid[stable_uid(raw)] = raw
-
-    print(
-        f"Captured {len(events_by_uid)} unique events from "
-        f"{len(set(captured_endpoints))} endpoint(s)."
-    )
-    for ep in sorted(set(captured_endpoints)):
-        print(f"  - {ep}")
-
-    DEBUG_ENDPOINTS.write_text("\n".join(sorted(set(captured_endpoints))) + "\n")
 
     cal, written = build_calendar(events_by_uid)
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_bytes(cal.to_ical())
-    print(f"Wrote {written} events to {OUT_PATH}")
-
-    # Exit cleanly even if zero events — empty calendar is still a valid feed
+    print(f"Wrote {written} unique events to {OUT_PATH}")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(asyncio.run(main()))
+    sys.exit(main())

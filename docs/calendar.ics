@@ -1,0 +1,1245 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//curlvegas-scraper//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CurlVegas Calendar
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260429T190000
+DTEND;TZID=America/Los_Angeles:20260429T203000
+UID:com_curling-799@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:MOPAC
+DTSTART;TZID=America/Los_Angeles:20260605T080000
+DTEND;TZID=America/Los_Angeles:20260607T150000
+UID:1cb0d3103220e58b@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Las Vegas Corporate Challenge
+DTSTART;TZID=America/Los_Angeles:20260512T180000
+DTEND;TZID=America/Los_Angeles:20260512T220000
+UID:d453ded93af3fc0c@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Las Vegas Corporate Challenge
+DTSTART;TZID=America/Los_Angeles:20260513T180000
+DTEND;TZID=America/Los_Angeles:20260513T220000
+UID:80d1dd1c888198e7@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Las Vegas Corporate Challenge
+DTSTART;TZID=America/Los_Angeles:20260514T180000
+DTEND;TZID=America/Los_Angeles:20260514T220000
+UID:4221a12e5fd52c40@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3U Bonspiel 2026
+DTSTART;TZID=America/Los_Angeles:20260501T080000
+DTEND;TZID=America/Los_Angeles:20260503T140000
+UID:com_eventbooking-195@curlvegas.scrape
+DESCRIPTION:Description: <p>Calling all curlers with less than 3 years on 
+ the ice for our 2026 3U Bonspiel.&nbsp\;</p>\n<div>\n<div><strong>To qua<s
+ pan face="arial\, sans-serif" style="font-family: arial\, sans-serif\;">li
+ fy</span><span face="arial\, sans-serif" style="font-family: arial\, sans-
+ serif\;">&nbsp\;participants must hav
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:MONDAYS CORP CHALLENGE LEAGUE
+DTSTART;TZID=America/Los_Angeles:20260622T184500
+DTEND;TZID=America/Los_Angeles:20260622T201500
+UID:745c8b92190439d2@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private
+DTSTART;TZID=America/Los_Angeles:20260609T103000
+DTEND;TZID=America/Los_Angeles:20260609T120000
+UID:9a1af238bd02e574@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dog Days of Summer Spiel '26
+DTSTART;TZID=America/Los_Angeles:20260626T080000
+DTEND;TZID=America/Los_Angeles:20260628T170000
+UID:com_eventbooking-246@curlvegas.scrape
+DESCRIPTION:Description: <p>Beat the Vegas heat with our Dog Days of Summe
+ r Spiel 2026!</p>\n<p>$500/team ($125 individuals)</p>\n<p>24 Teams</p>\n<
+ p>3 game guarantee</p>\n<p>Hearty breakfast all 3-days\, and lunch provide
+ d Fri &amp\; Sat.&nbsp\; Snacks available throughout all the days.&nbsp\;<
+ /p>\n<p><span style="color: #ff00
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260428T190000
+DTEND;TZID=America/Los_Angeles:20260428T203000
+UID:com_curling-790@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fabulous CurlVegas Spiel 2026
+DTSTART;TZID=America/Los_Angeles:20260911T080000
+DTEND;TZID=America/Los_Angeles:20260913T170000
+UID:com_eventbooking-256@curlvegas.scrape
+DESCRIPTION:Description: <p>Join CurlVegas in fabulous Las Vegas for 2nd a
+ nnual <em>Welcome to fabulous CurlVegas Spiel</em>!</p>\n<p>Friday Sept 11
+ \, 2026 - Sunday September 13\, 2026</p>\n<p>$500 team / $125 Individuals<
+ /p>\n<p>24 Teams -&nbsp\;3 game guarantee</p>\n<p>Breakfast daily</p>\n<p>
+ Lunch Friday and Saturday&nbsp\;<
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - A+
+DTSTART;TZID=America/Los_Angeles:20260427T151500
+DTEND;TZID=America/Los_Angeles:20260427T164500
+UID:af72e42190aa3007@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private
+DTSTART;TZID=America/Los_Angeles:20270205T090000
+DTEND;TZID=America/Los_Angeles:20270207T200000
+UID:0c5ccaa3d8aa5da0@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hold maint
+DTSTART;TZID=America/Los_Angeles:20260522T060000
+DTEND;TZID=America/Los_Angeles:20260525T193000
+UID:811c4f2c404611bf@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Neon Spiel
+DTSTART;TZID=America/Los_Angeles:20270129T090000
+DTEND;TZID=America/Los_Angeles:20270131T170000
+UID:27e7facfbf4ad56e@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260530T130000
+DTEND;TZID=America/Los_Angeles:20260530T140000
+UID:d1234eb5e214e9db@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sat 05-09-26 Learn to Curl
+DTSTART;TZID=America/Los_Angeles:20260509T110000
+DTEND;TZID=America/Los_Angeles:20260509T123000
+UID:com_eventbooking-260@curlvegas.scrape
+DESCRIPTION:Description: <p><span class="wixui-rich-text__text"><span clas
+ s="wixui-rich-text__text"><span class="wixui-rich-text__text">Our beginner
+ 's lesson covers the basics in a fun\, fast-paced session that will have y
+ ou throwing and sweeping stones in no time.&nbsp\; Then we'll finish with 
+ an abbreviated game so you'll u
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Corporate Challenge Scrimmage 05-04-26
+DTSTART;TZID=America/Los_Angeles:20260504T183000
+DTEND;TZID=America/Los_Angeles:20260504T200000
+UID:com_eventbooking-267@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maint
+DTSTART;TZID=America/Los_Angeles:20260509T123000
+DTEND;TZID=America/Los_Angeles:20260509T133000
+UID:c332736a864168cc@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - KM
+DTSTART;TZID=America/Los_Angeles:20260427T183000
+DTEND;TZID=America/Los_Angeles:20260427T200000
+UID:6f13068a365754c4@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sat 05-16-26 Learn to Curl
+DTSTART;TZID=America/Los_Angeles:20260516T150000
+DTEND;TZID=America/Los_Angeles:20260516T163000
+UID:com_eventbooking-275@curlvegas.scrape
+DESCRIPTION:Description: <p><span class="wixui-rich-text__text"><span clas
+ s="wixui-rich-text__text"><span class="wixui-rich-text__text">Our beginner
+ 's lesson covers the basics in a fun\, fast-paced session that will have y
+ ou throwing and sweeping stones in no time.&nbsp\; Then we'll finish with 
+ an abbreviated game so you'll u
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kizzle Kazzle Game  4-26-26
+DTSTART;TZID=America/Los_Angeles:20260426T150000
+DTEND;TZID=America/Los_Angeles:20260426T170000
+UID:com_eventbooking-270@curlvegas.scrape
+DESCRIPTION:Description: <p>Kizzle Kazzle pick-up game. All levels welcome
+ !</p>
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260505T190000
+DTEND;TZID=America/Los_Angeles:20260505T200000
+UID:51b7e5ab05653533@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - TN
+DTSTART;TZID=America/Los_Angeles:20260527T110000
+DTEND;TZID=America/Los_Angeles:20260527T130000
+UID:d7f0e9327495fb61@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260430T153000
+DTEND;TZID=America/Los_Angeles:20260430T163000
+UID:fbcd654856577b80@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sun 05-03-26 Learn to Curl
+DTSTART;TZID=America/Los_Angeles:20260503T143000
+DTEND;TZID=America/Los_Angeles:20260503T160000
+UID:com_eventbooking-274@curlvegas.scrape
+DESCRIPTION:Description: <p><span class="wixui-rich-text__text"><span clas
+ s="wixui-rich-text__text"><span class="wixui-rich-text__text">Our beginner
+ 's lesson covers the basics in a fun\, fast-paced session that will have y
+ ou throwing and sweeping stones in no time.&nbsp\; Then we'll finish with 
+ an abbreviated game so you'll u
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sat 06-13-26 Learn to Curl
+DTSTART;TZID=America/Los_Angeles:20260613T110000
+DTEND;TZID=America/Los_Angeles:20260613T123000
+UID:com_eventbooking-283@curlvegas.scrape
+DESCRIPTION:Description: <p><span class="wixui-rich-text__text"><span clas
+ s="wixui-rich-text__text"><span class="wixui-rich-text__text">Our beginner
+ 's lesson covers the basics in a fun\, fast-paced session that will have y
+ ou throwing and sweeping stones in no time.&nbsp\; Then we'll finish with 
+ an abbreviated game so you'll u
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sat 05-30-26 Learn to Curl
+DTSTART;TZID=America/Los_Angeles:20260530T160000
+DTEND;TZID=America/Los_Angeles:20260530T173000
+UID:com_eventbooking-276@curlvegas.scrape
+DESCRIPTION:Description: <p><span class="wixui-rich-text__text"><span clas
+ s="wixui-rich-text__text"><span class="wixui-rich-text__text">Our beginner
+ 's lesson covers the basics in a fun\, fast-paced session that will have y
+ ou throwing and sweeping stones in no time.&nbsp\; Then we'll finish with 
+ an abbreviated game so you'll u
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sin City Classic
+DTSTART;TZID=America/Los_Angeles:20270116T080000
+DTEND;TZID=America/Los_Angeles:20270116T190000
+UID:142b458edee41d23@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sin City Classic
+DTSTART;TZID=America/Los_Angeles:20270117T080000
+DTEND;TZID=America/Los_Angeles:20270117T140000
+UID:cf33fd7c8a53ae9a@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sin City Classic
+DTSTART;TZID=America/Los_Angeles:20270115T080000
+DTEND;TZID=America/Los_Angeles:20270115T190000
+UID:47a0cfbf4cb00a12@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260430T163000
+DTEND;TZID=America/Los_Angeles:20260430T173000
+UID:91519756bad08a7b@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260430T190000
+DTEND;TZID=America/Los_Angeles:20260430T210000
+UID:com_curling-821@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - DM
+DTSTART;TZID=America/Los_Angeles:20260509T160000
+DTEND;TZID=America/Los_Angeles:20260509T180000
+UID:a566044d7b743d8e@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - ML
+DTSTART;TZID=America/Los_Angeles:20260519T160000
+DTEND;TZID=America/Los_Angeles:20260519T173000
+UID:6e29b4eeb7a247b5@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260511T183000
+DTEND;TZID=America/Los_Angeles:20260511T193000
+UID:0c66cfe0e15003b3@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260511T193000
+DTEND;TZID=America/Los_Angeles:20260511T203000
+UID:47bd6a5d695474ad@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260509T133000
+DTEND;TZID=America/Los_Angeles:20260509T143000
+UID:52661a69072181ba@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260528T190000
+DTEND;TZID=America/Los_Angeles:20260528T210000
+UID:com_curling-872@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260604T190000
+DTEND;TZID=America/Los_Angeles:20260604T210000
+UID:com_curling-874@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260521T190000
+DTEND;TZID=America/Los_Angeles:20260521T210000
+UID:com_curling-865@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260507T190000
+DTEND;TZID=America/Los_Angeles:20260507T210000
+UID:com_curling-864@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260602T190000
+DTEND;TZID=America/Los_Angeles:20260602T200000
+UID:d693c03c9a8b702c@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260519T190000
+DTEND;TZID=America/Los_Angeles:20260519T200000
+UID:a0f9cafc309d87b7@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - PG
+DTSTART;TZID=America/Los_Angeles:20260530T110000
+DTEND;TZID=America/Los_Angeles:20260530T123000
+UID:0a9a07247fab1a2a@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:MONDAYS CORP CHALLENGE LEAGUE
+DTSTART;TZID=America/Los_Angeles:20260608T184500
+DTEND;TZID=America/Los_Angeles:20260608T201500
+UID:78285ec277c6aab2@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:MONDAYS CORP CHALLENGE LEAGUE
+DTSTART;TZID=America/Los_Angeles:20260615T184500
+DTEND;TZID=America/Los_Angeles:20260615T201500
+UID:544e021ba13c43bf@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private
+DTSTART;TZID=America/Los_Angeles:20260620T110000
+DTEND;TZID=America/Los_Angeles:20260620T123000
+UID:3f969c69a2a5afca@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260611T190000
+DTEND;TZID=America/Los_Angeles:20260611T210000
+UID:com_curling-879@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260618T190000
+DTEND;TZID=America/Los_Angeles:20260618T210000
+UID:com_curling-881@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260625T190000
+DTEND;TZID=America/Los_Angeles:20260625T210000
+UID:com_curling-885@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260529T183000
+DTEND;TZID=America/Los_Angeles:20260529T193000
+UID:c7d992857903a655@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260621T150000
+DTEND;TZID=America/Los_Angeles:20260621T163000
+UID:com_curling-908@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260614T150000
+DTEND;TZID=America/Los_Angeles:20260614T163000
+UID:com_curling-904@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260531T150000
+DTEND;TZID=America/Los_Angeles:20260531T163000
+UID:com_curling-900@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260510T150000
+DTEND;TZID=America/Los_Angeles:20260510T163000
+UID:com_curling-894@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260517T150000
+DTEND;TZID=America/Los_Angeles:20260517T163000
+UID:com_curling-899@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:MAINT
+DTSTART;TZID=America/Los_Angeles:20260805T000000
+DTEND;TZID=America/Los_Angeles:20260816T193000
+UID:d6d964634b680e4a@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CurlVegas 3U Bonspiel
+DTSTART;TZID=America/Los_Angeles:20270430T090000
+DTEND;TZID=America/Los_Angeles:20270502T120000
+UID:1af4c15cd8e2ba6e@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maintenance
+DTSTART;TZID=America/Los_Angeles:20270502T130000
+DTEND;TZID=America/Los_Angeles:20270504T210000
+UID:6169166d8ecf6bc6@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:USCA 5U Nationals
+DTSTART;TZID=America/Los_Angeles:20270504T090000
+DTEND;TZID=America/Los_Angeles:20270509T140000
+UID:ad9290eb7b6a637f@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mon 06-29-26 Learn to Curl
+DTSTART;TZID=America/Los_Angeles:20260629T173000
+DTEND;TZID=America/Los_Angeles:20260629T190000
+UID:com_eventbooking-284@curlvegas.scrape
+DESCRIPTION:Description: <p><span class="wixui-rich-text__text"><span clas
+ s="wixui-rich-text__text"><span class="wixui-rich-text__text">Our beginner
+ 's lesson covers the basics in a fun\, fast-paced session that will have y
+ ou throwing and sweeping stones in no time.&nbsp\; Then we'll finish with 
+ an abbreviated game so you'll u
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fri 07-24-26 Learn to Curl
+DTSTART;TZID=America/Los_Angeles:20260724T183000
+DTEND;TZID=America/Los_Angeles:20260724T200000
+UID:com_eventbooking-286@curlvegas.scrape
+DESCRIPTION:Description: <p><span class="wixui-rich-text__text"><span clas
+ s="wixui-rich-text__text"><span class="wixui-rich-text__text">Our beginner
+ 's lesson covers the basics in a fun\, fast-paced session that will have y
+ ou throwing and sweeping stones in no time.  Then we'll finish with an ab
+ breviated game so you'll unders
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260530T140000
+DTEND;TZID=America/Los_Angeles:20260530T150000
+UID:a3c6adfe99721880@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:MONDAYS CORP CHALLENGE LEAGUE
+DTSTART;TZID=America/Los_Angeles:20260601T184500
+DTEND;TZID=America/Los_Angeles:20260601T201500
+UID:66dc5b1c8beb7239@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LTC Train
+DTSTART;TZID=America/Los_Angeles:20260529T193000
+DTEND;TZID=America/Los_Angeles:20260529T203000
+UID:9876c0f888867633@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260429T190000
+DTEND;TZID=America/Los_Angeles:20260429T203000
+UID:com_curling-798@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private
+DTSTART;TZID=America/Los_Angeles:20260723T100000
+DTEND;TZID=America/Los_Angeles:20260723T113000
+UID:d4e30a0394be4cff@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private
+DTSTART;TZID=America/Los_Angeles:20260715T110000
+DTEND;TZID=America/Los_Angeles:20260715T123000
+UID:fdde1f4ce22fee61@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260430T190000
+DTEND;TZID=America/Los_Angeles:20260430T210000
+UID:com_curling-818@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260427T190000
+DTEND;TZID=America/Los_Angeles:20260427T200000
+UID:2fa55faef06e9667@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - G&K
+DTSTART;TZID=America/Los_Angeles:20260512T143000
+DTEND;TZID=America/Los_Angeles:20260512T170000
+UID:d5fcc788ee76b3cf@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260528T190000
+DTEND;TZID=America/Los_Angeles:20260528T210000
+UID:com_curling-869@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260521T190000
+DTEND;TZID=America/Los_Angeles:20260521T210000
+UID:com_curling-868@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260507T190000
+DTEND;TZID=America/Los_Angeles:20260507T210000
+UID:com_curling-863@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260609T190000
+DTEND;TZID=America/Los_Angeles:20260609T210000
+UID:com_curling-859@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - MZ
+DTSTART;TZID=America/Los_Angeles:20260629T153000
+DTEND;TZID=America/Los_Angeles:20260629T173000
+UID:3f80e099bb672916@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260519T163000
+DTEND;TZID=America/Los_Angeles:20260519T173000
+UID:749d8f954d41352e@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260604T190000
+DTEND;TZID=America/Los_Angeles:20260604T210000
+UID:com_curling-875@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260602T190000
+DTEND;TZID=America/Los_Angeles:20260602T210000
+UID:com_curling-855@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260526T190000
+DTEND;TZID=America/Los_Angeles:20260526T210000
+UID:com_curling-852@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260519T190000
+DTEND;TZID=America/Los_Angeles:20260519T210000
+UID:com_curling-849@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260505T190000
+DTEND;TZID=America/Los_Angeles:20260505T210000
+UID:com_curling-847@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260519T153000
+DTEND;TZID=America/Los_Angeles:20260519T163000
+UID:451f8ca0b5452199@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260611T190000
+DTEND;TZID=America/Los_Angeles:20260611T210000
+UID:com_curling-878@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260618T190000
+DTEND;TZID=America/Los_Angeles:20260618T210000
+UID:com_curling-884@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260625T190000
+DTEND;TZID=America/Los_Angeles:20260625T210000
+UID:com_curling-886@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260621T150000
+DTEND;TZID=America/Los_Angeles:20260621T163000
+UID:com_curling-910@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260614T150000
+DTEND;TZID=America/Los_Angeles:20260614T163000
+UID:com_curling-905@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260531T150000
+DTEND;TZID=America/Los_Angeles:20260531T163000
+UID:com_curling-903@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260510T150000
+DTEND;TZID=America/Los_Angeles:20260510T163000
+UID:com_curling-892@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260517T150000
+DTEND;TZID=America/Los_Angeles:20260517T163000
+UID:com_curling-898@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - SS
+DTSTART;TZID=America/Los_Angeles:20260530T130000
+DTEND;TZID=America/Los_Angeles:20260530T143000
+UID:8f660a3798b3896c@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - KS
+DTSTART;TZID=America/Los_Angeles:20260613T160000
+DTEND;TZID=America/Los_Angeles:20260613T173000
+UID:9fca73f4f6e5d393@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kizzle Kazzle Game  5-29-26
+DTSTART;TZID=America/Los_Angeles:20260529T183000
+DTEND;TZID=America/Los_Angeles:20260529T203000
+UID:com_eventbooking-271@curlvegas.scrape
+DESCRIPTION:Description: <p>Kizzle Kazzle pick-up game. All levels welcome
+ !</p>
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260603T190000
+DTEND;TZID=America/Los_Angeles:20260603T200000
+UID:9d15ba374cf9433f@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mon 05-11-26 Next Steps - Session 4 Basic Strategy
+DTSTART;TZID=America/Los_Angeles:20260511T183000
+DTEND;TZID=America/Los_Angeles:20260511T203000
+UID:com_eventbooking-281@curlvegas.scrape
+DESCRIPTION:Description: <p>Further your curling instruction with our Next
+  Steps Lessons.</p>\n<p>Session 4 - Basic Strategy: What we will cover in 
+ this session:</p>\n<p dir="ltr" style="padding-left: 30px\;"><span data-ol
+ k-copy-source="MessageBody">General strategy with and without hammer</span
+ ></p>\n<p dir="ltr" style="pad
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - RO
+DTSTART;TZID=America/Los_Angeles:20260529T183000
+DTEND;TZID=America/Los_Angeles:20260529T200000
+UID:01cf86385a1614c8@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mon 04-27-26 Next Steps - Session 2 Sweeping
+DTSTART;TZID=America/Los_Angeles:20260427T183000
+DTEND;TZID=America/Los_Angeles:20260427T203000
+UID:com_eventbooking-262@curlvegas.scrape
+DESCRIPTION:Description: <p>Further your curling instruction with our Next
+  Steps Lessons.</p>\n<p>Session 2 - Sweeping:&nbsp\; What we will cover in
+  this session:</p>\n<p style="padding-left: 30px\;"><span data-olk-copy-so
+ urce="MessageBody"></span><span data-olk-copy-source="MessageBody">How to 
+ hold the broom</span><span data
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mon 05-11-26 Next Steps - Session 1 Delivery
+DTSTART;TZID=America/Los_Angeles:20260511T183000
+DTEND;TZID=America/Los_Angeles:20260511T203000
+UID:com_eventbooking-264@curlvegas.scrape
+DESCRIPTION:Description: <p>Further your curling instruction with our Next
+  Steps Lessons.</p>\n<p>Session 1 - Delivery:&nbsp\; What we will cover in
+  this session:</p>\n<p style="padding-left: 30px\;"><span data-olk-copy-so
+ urce="MessageBody">Foot Placement in Hack</span></p>\n<p style="padding-le
+ ft: 30px\;">Balance</p>\n<p styl
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260429T190000
+DTEND;TZID=America/Los_Angeles:20260429T203000
+UID:com_curling-800@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mon 06-01-26 Next Steps - Session 1 Delivery
+DTSTART;TZID=America/Los_Angeles:20260601T183000
+DTEND;TZID=America/Los_Angeles:20260601T203000
+UID:com_eventbooking-277@curlvegas.scrape
+DESCRIPTION:Description: <p>Further your curling instruction with our Next
+  Steps Lessons.</p>\n<p>Session 1 - Delivery:&nbsp\; What we will cover in
+  this session:</p>\n<p style="padding-left: 30px\;"><span data-olk-copy-so
+ urce="MessageBody">Foot Placement in Hack</span></p>\n<p style="padding-le
+ ft: 30px\;">Balance</p>\n<p styl
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sun 05-03-26 Next Steps - Session 1 Delivery
+DTSTART;TZID=America/Los_Angeles:20260503T140000
+DTEND;TZID=America/Los_Angeles:20260503T160000
+UID:com_eventbooking-272@curlvegas.scrape
+DESCRIPTION:Description: <p>Further your curling instruction with our Next
+  Steps Lessons.</p>\n<p>Session 1 - Delivery:&nbsp\; What we will cover in
+  this session:</p>\n<p style="padding-left: 30px\;"><span data-olk-copy-so
+ urce="MessageBody">Foot Placement in Hack</span></p>\n<p style="padding-le
+ ft: 30px\;">Balance</p>\n<p styl
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private
+DTSTART;TZID=America/Los_Angeles:20260609T153000
+DTEND;TZID=America/Los_Angeles:20260609T173000
+UID:6ae8d4525b13067d@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260428T190000
+DTEND;TZID=America/Los_Angeles:20260428T210000
+UID:com_curling-817@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260430T190000
+DTEND;TZID=America/Los_Angeles:20260430T210000
+UID:com_curling-819@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mon 06-08-26 Next Steps - Session 2 Sweeping
+DTSTART;TZID=America/Los_Angeles:20260608T183000
+DTEND;TZID=America/Los_Angeles:20260608T203000
+UID:com_eventbooking-278@curlvegas.scrape
+DESCRIPTION:Description: <p>Further your curling instruction with our Next
+  Steps Lessons.</p>\n<p>Session 2 - Sweeping:&nbsp\; What we will cover in
+  this session:</p>\n<p style="padding-left: 30px\;"><span data-olk-copy-so
+ urce="MessageBody"></span><span data-olk-copy-source="MessageBody">How to 
+ hold the broom</span><span data
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mon 06-15-26 Next Steps - Session 3 Rock Management/Positions
+DTSTART;TZID=America/Los_Angeles:20260615T183000
+DTEND;TZID=America/Los_Angeles:20260615T203000
+UID:com_eventbooking-279@curlvegas.scrape
+DESCRIPTION:Description: <p>Further your curling instruction with our Next
+  Steps Lessons.</p>\n<p>Session 3 - Positions and Managing the Rock:&nbsp\
+ ; What we will cover in this session:</p>\n<p dir="ltr" style="padding-lef
+ t: 30px\;"><span data-olk-copy-source="MessageBody">Roles of each Position
+ </span></p>\n<p dir="ltr" style
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mon 06-22-26 Next Steps - Session 4 Basic Strategy
+DTSTART;TZID=America/Los_Angeles:20260622T190000
+DTEND;TZID=America/Los_Angeles:20260622T210000
+UID:com_eventbooking-280@curlvegas.scrape
+DESCRIPTION:Description: <p>Further your curling instruction with our Next
+  Steps Lessons.</p>\n<p>Session 4 - Basic Strategy: What we will cover in 
+ this session:</p>\n<p dir="ltr" style="padding-left: 30px\;"><span data-ol
+ k-copy-source="MessageBody">General strategy with and without hammer</span
+ ></p>\n<p dir="ltr" style="pad
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Corporate Challenge Scrimmage 05-09-26
+DTSTART;TZID=America/Los_Angeles:20260509T153000
+DTEND;TZID=America/Los_Angeles:20260509T170000
+UID:com_eventbooking-282@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260516T130000
+DTEND;TZID=America/Los_Angeles:20260516T150000
+UID:com_curling-889@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260528T190000
+DTEND;TZID=America/Los_Angeles:20260528T210000
+UID:com_curling-870@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260521T190000
+DTEND;TZID=America/Los_Angeles:20260521T210000
+UID:com_curling-866@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260507T190000
+DTEND;TZID=America/Los_Angeles:20260507T210000
+UID:com_curling-862@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260609T190000
+DTEND;TZID=America/Los_Angeles:20260609T210000
+UID:com_curling-860@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:MONDAYS CORP CHALLENGE LEAGUE
+DTSTART;TZID=America/Los_Angeles:20260629T184500
+DTEND;TZID=America/Los_Angeles:20260629T201500
+UID:6993a0b2c3e95327@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260516T150000
+DTEND;TZID=America/Los_Angeles:20260516T160000
+UID:777356e923031ac4@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260617T190000
+DTEND;TZID=America/Los_Angeles:20260617T203000
+UID:com_curling-845@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260610T190000
+DTEND;TZID=America/Los_Angeles:20260610T203000
+UID:com_curling-843@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260603T190000
+DTEND;TZID=America/Los_Angeles:20260603T203000
+UID:com_curling-840@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260527T190000
+DTEND;TZID=America/Los_Angeles:20260527T203000
+UID:com_curling-838@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260520T190000
+DTEND;TZID=America/Los_Angeles:20260520T203000
+UID:com_curling-837@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260506T080000
+DTEND;TZID=America/Los_Angeles:20260506T093000
+UID:com_curling-834@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260602T190000
+DTEND;TZID=America/Los_Angeles:20260602T210000
+UID:com_curling-857@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260526T190000
+DTEND;TZID=America/Los_Angeles:20260526T210000
+UID:com_curling-853@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260519T190000
+DTEND;TZID=America/Los_Angeles:20260519T210000
+UID:com_curling-850@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260505T190000
+DTEND;TZID=America/Los_Angeles:20260505T210000
+UID:com_curling-848@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - RS
+DTSTART;TZID=America/Los_Angeles:20260517T123000
+DTEND;TZID=America/Los_Angeles:20260517T140000
+UID:35f21a415beae00e@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260604T190000
+DTEND;TZID=America/Los_Angeles:20260604T210000
+UID:com_curling-876@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260611T190000
+DTEND;TZID=America/Los_Angeles:20260611T210000
+UID:com_curling-877@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260618T190000
+DTEND;TZID=America/Los_Angeles:20260618T210000
+UID:com_curling-882@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260625T190000
+DTEND;TZID=America/Los_Angeles:20260625T210000
+UID:com_curling-888@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260530T130000
+DTEND;TZID=America/Los_Angeles:20260530T150000
+UID:com_curling-891@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260621T150000
+DTEND;TZID=America/Los_Angeles:20260621T163000
+UID:com_curling-911@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260614T150000
+DTEND;TZID=America/Los_Angeles:20260614T163000
+UID:com_curling-906@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260531T150000
+DTEND;TZID=America/Los_Angeles:20260531T163000
+UID:com_curling-902@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260510T150000
+DTEND;TZID=America/Los_Angeles:20260510T163000
+UID:com_curling-893@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260517T150000
+DTEND;TZID=America/Los_Angeles:20260517T163000
+UID:com_curling-897@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sun 07-12-26 Learn to Curl
+DTSTART;TZID=America/Los_Angeles:20260712T123000
+DTEND;TZID=America/Los_Angeles:20260712T140000
+UID:com_eventbooking-285@curlvegas.scrape
+DESCRIPTION:Description: <p><span class="wixui-rich-text__text"><span clas
+ s="wixui-rich-text__text"><span class="wixui-rich-text__text">Our beginner
+ 's lesson covers the basics in a fun\, fast-paced session that will have y
+ ou throwing and sweeping stones in no time.&nbsp\; Then we'll finish with 
+ an abbreviated game so you'll u
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mathis Elementary Youth Learn to Curl
+DTSTART;TZID=America/Los_Angeles:20260531T120000
+DTEND;TZID=America/Los_Angeles:20260531T133000
+UID:com_eventbooking-287@curlvegas.scrape
+DESCRIPTION:Description: <p class="font_7 wixui-rich-text__text"><span cla
+ ss="wixui-rich-text__text"><span class="wixui-rich-text__text"><span class
+ ="wixui-rich-text__text">Open for all Mathis Elementary <span data-olk-cop
+ y-source="MessageBody">5th and 6th graders.&nbsp\; (Parents welcome too!)<
+ /span></span></span></span></p
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260531T100000
+DTEND;TZID=America/Los_Angeles:20260531T110000
+UID:4f5a8d4d8c5869dd@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260429T190000
+DTEND;TZID=America/Los_Angeles:20260429T203000
+UID:com_curling-797@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - PC
+DTSTART;TZID=America/Los_Angeles:20260426T173000
+DTEND;TZID=America/Los_Angeles:20260426T193000
+UID:f19fa6d9d6eed70a@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private
+DTSTART;TZID=America/Los_Angeles:20260827T093000
+DTEND;TZID=America/Los_Angeles:20260830T130000
+UID:e222ae096563fcb9@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260428T190000
+DTEND;TZID=America/Los_Angeles:20260428T210000
+UID:com_curling-816@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mon 05-04-26 Next Steps - Session 3 Rock Management/Positions
+DTSTART;TZID=America/Los_Angeles:20260504T183000
+DTEND;TZID=America/Los_Angeles:20260504T203000
+UID:com_eventbooking-263@curlvegas.scrape
+DESCRIPTION:Description: <p>Further your curling instruction with our Next
+  Steps Lessons.</p>\n<p>Session 3 - Positions and Managing the Rock:&nbsp\
+ ; What we will cover in this session:</p>\n<p dir="ltr" style="padding-lef
+ t: 30px\;"><span data-olk-copy-source="MessageBody">Roles of each Position
+ </span></p>\n<p dir="ltr" style
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private
+DTSTART;TZID=America/Los_Angeles:20260629T113000
+DTEND;TZID=America/Los_Angeles:20260629T133000
+UID:c8bafd39908c9f1d@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - Cox
+DTSTART;TZID=America/Los_Angeles:20260513T140000
+DTEND;TZID=America/Los_Angeles:20260513T160000
+UID:6412b46f8c82d1b7@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260430T190000
+DTEND;TZID=America/Los_Angeles:20260430T210000
+UID:com_curling-820@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260604T190000
+DTEND;TZID=America/Los_Angeles:20260604T210000
+UID:com_curling-873@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260528T190000
+DTEND;TZID=America/Los_Angeles:20260528T210000
+UID:com_curling-871@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260521T190000
+DTEND;TZID=America/Los_Angeles:20260521T210000
+UID:com_curling-867@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260505T190000
+DTEND;TZID=America/Los_Angeles:20260505T210000
+UID:com_curling-846@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260629T144500
+DTEND;TZID=America/Los_Angeles:20260629T164500
+UID:7db899e765b6f990@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260629T233000
+DTEND;TZID=America/Los_Angeles:20260629T133000
+UID:1fe084619cfdc741@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Team Mexico
+DTSTART;TZID=America/Los_Angeles:20260730T160000
+DTEND;TZID=America/Los_Angeles:20260730T180000
+UID:abc5908cacf09e2a@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Private - JH
+DTSTART;TZID=America/Los_Angeles:20260531T100000
+DTEND;TZID=America/Los_Angeles:20260531T120000
+UID:d4dee82acea060a7@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260617T190000
+DTEND;TZID=America/Los_Angeles:20260617T203000
+UID:com_curling-844@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260610T190000
+DTEND;TZID=America/Los_Angeles:20260610T203000
+UID:com_curling-842@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260603T190000
+DTEND;TZID=America/Los_Angeles:20260603T203000
+UID:com_curling-841@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260527T190000
+DTEND;TZID=America/Los_Angeles:20260527T203000
+UID:com_curling-839@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260520T190000
+DTEND;TZID=America/Los_Angeles:20260520T203000
+UID:com_curling-836@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260506T190000
+DTEND;TZID=America/Los_Angeles:20260506T203000
+UID:com_curling-835@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Team Mexico
+DTSTART;TZID=America/Los_Angeles:20260731T110000
+DTEND;TZID=America/Los_Angeles:20260731T130000
+UID:b3d146964d3f382b@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Team Mexico
+DTSTART;TZID=America/Los_Angeles:20260731T153000
+DTEND;TZID=America/Los_Angeles:20260731T173000
+UID:db989028e690bb6d@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Team Mexico
+DTSTART;TZID=America/Los_Angeles:20260801T093000
+DTEND;TZID=America/Los_Angeles:20260801T123000
+UID:609b66d8fd7c620c@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Team Mexico
+DTSTART;TZID=America/Los_Angeles:20260801T143000
+DTEND;TZID=America/Los_Angeles:20260801T163000
+UID:a5b4439f17524302@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Team Mexico
+DTSTART;TZID=America/Los_Angeles:20260802T093000
+DTEND;TZID=America/Los_Angeles:20260802T123000
+UID:23f05f46a200f907@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Team Mexico
+DTSTART;TZID=America/Los_Angeles:20260802T143000
+DTEND;TZID=America/Los_Angeles:20260802T153000
+UID:74aa9c60a9d9fab0@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260609T190000
+DTEND;TZID=America/Los_Angeles:20260609T210000
+UID:com_curling-858@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260602T190000
+DTEND;TZID=America/Los_Angeles:20260602T210000
+UID:com_curling-856@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260526T190000
+DTEND;TZID=America/Los_Angeles:20260526T210000
+UID:com_curling-854@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260519T190000
+DTEND;TZID=America/Los_Angeles:20260519T210000
+UID:com_curling-851@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260613T130000
+DTEND;TZID=America/Los_Angeles:20260613T150000
+UID:com_curling-920@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260507T190000
+DTEND;TZID=America/Los_Angeles:20260507T210000
+UID:com_curling-861@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maint
+DTSTART;TZID=America/Los_Angeles:20260509T120000
+DTEND;TZID=America/Los_Angeles:20260509T130000
+UID:0354efdac5163076@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260611T190000
+DTEND;TZID=America/Los_Angeles:20260611T210000
+UID:com_curling-880@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260618T190000
+DTEND;TZID=America/Los_Angeles:20260618T210000
+UID:com_curling-883@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260625T190000
+DTEND;TZID=America/Los_Angeles:20260625T210000
+UID:com_curling-887@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260509T133000
+DTEND;TZID=America/Los_Angeles:20260509T153000
+UID:com_curling-890@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Practice Ice
+DTSTART;TZID=America/Los_Angeles:20260530T160000
+DTEND;TZID=America/Los_Angeles:20260530T170000
+UID:eeba5872e6b3bbb9@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260621T150000
+DTEND;TZID=America/Los_Angeles:20260621T163000
+UID:com_curling-909@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260614T150000
+DTEND;TZID=America/Los_Angeles:20260614T163000
+UID:com_curling-907@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260531T150000
+DTEND;TZID=America/Los_Angeles:20260531T163000
+UID:com_curling-901@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260510T150000
+DTEND;TZID=America/Los_Angeles:20260510T163000
+UID:com_curling-895@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260517T150000
+DTEND;TZID=America/Los_Angeles:20260517T163000
+UID:com_curling-896@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260613T134500
+DTEND;TZID=America/Los_Angeles:20260613T154500
+UID:com_curling-921@curlvegas.scrape
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Curling Game
+DTSTART;TZID=America/Los_Angeles:20260613T143000
+DTEND;TZID=America/Los_Angeles:20260613T163000
+UID:com_curling-922@curlvegas.scrape
+END:VEVENT
+END:VCALENDAR
