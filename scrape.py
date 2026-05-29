@@ -9,60 +9,60 @@ FullCalendar. FullCalendar loads events via a POST to:
 
 with the visible date range (start/end) plus calview/types params. The
 response is a JSON array of FullCalendar event objects (despite being served
-with a text/html content-type). We POST to that endpoint directly for a wide
-date window — far more reliable and faster than driving a headless browser.
+with a text/html content-type). The endpoint only returns one month of events
+at a time, so we POST it once per month across the window below and merge the
+results — far more reliable and faster than driving a headless browser.
 
-The raw JSON response is dumped to docs/_debug.json for troubleshooting.
+The merged raw JSON is dumped to docs/_debug.json for troubleshooting.
 """
 
 import hashlib
 import json
 import sys
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 
 import requests
 from dateutil import parser as date_parser
+from dateutil.relativedelta import relativedelta
 from icalendar import Calendar, Event
 from pytz import timezone as pytz_timezone
 
 BASE_URL = "https://curlvegas.com/index.php"
 EVENTS_TASK = "com_facilitycalendar&task=calendar.getevents"
+EVENTS_URL = f"{BASE_URL}?option={EVENTS_TASK}"
 OUT_PATH = Path("docs/calendar.ics")
 DEBUG_JSON = Path("docs/_debug.json")
 DEBUG_ENDPOINTS = Path("docs/_endpoints.txt")
 LOCAL_TZ = pytz_timezone("America/Los_Angeles")  # CurlVegas is in Las Vegas
 
-# How wide a window of events to fetch, relative to today.
-DAYS_BACK = 31
-DAYS_AHEAD = 365
+# How wide a window of months to fetch, relative to the current month.
+MONTHS_BACK = 2
+MONTHS_AHEAD = 12
+
+HEADERS = {
+    "X-Requested-With": "XMLHttpRequest",
+    "User-Agent": (
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    ),
+}
 
 
-def fetch_events(start, end):
-    """POST to the FullCalendar events endpoint and return a list of events."""
-    url = f"{BASE_URL}?option={EVENTS_TASK}"
-    resp = requests.post(
-        url,
+def fetch_events(session, start, end):
+    """POST one [start, end) window to the events endpoint and return its events."""
+    resp = session.post(
+        EVENTS_URL,
         data={
             "start": start.isoformat(),
             "end": end.isoformat(),
             "calview": "dayGridMonth",
             "types": "",
         },
-        headers={
-            "X-Requested-With": "XMLHttpRequest",
-            "User-Agent": (
-                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-            ),
-        },
+        headers=HEADERS,
         timeout=60,
     )
     resp.raise_for_status()
-    DEBUG_JSON.parent.mkdir(parents=True, exist_ok=True)
-    DEBUG_JSON.write_text(resp.text, encoding="utf-8")
-    DEBUG_ENDPOINTS.write_text(url + "\n", encoding="utf-8")
-
     data = resp.json()
     if not isinstance(data, list):
         raise ValueError(f"Expected a JSON list of events, got {type(data).__name__}")
@@ -149,24 +149,37 @@ def build_calendar(events_by_uid):
 
 
 def main():
-    today = date.today()
-    start = today - timedelta(days=DAYS_BACK)
-    end = today + timedelta(days=DAYS_AHEAD)
+    # First day of the current month, then step one month at a time across the
+    # window. The endpoint only returns a single month per request.
+    first_of_month = date.today().replace(day=1)
+    window_start = first_of_month - relativedelta(months=MONTHS_BACK)
 
-    print(f"Fetching events from {start} to {end} ...")
-    batch = fetch_events(start, end)
-    print(f"Endpoint returned {len(batch)} events.")
-
-    # De-dupe (the endpoint can repeat multi-resource events across resources)
+    all_raw = []
+    # De-dupe across months (events recur across windows, and the endpoint can
+    # repeat multi-resource events).
     events_by_uid = {}
-    for raw in batch:
-        if isinstance(raw, dict):
-            events_by_uid[stable_uid(raw)] = raw
+
+    with requests.Session() as session:
+        for i in range(MONTHS_BACK + MONTHS_AHEAD + 1):
+            start = window_start + relativedelta(months=i)
+            end = start + relativedelta(months=1)
+            batch = fetch_events(session, start, end)
+            print(f"{start:%Y-%m}: {len(batch)} events")
+            for raw in batch:
+                if isinstance(raw, dict):
+                    all_raw.append(raw)
+                    events_by_uid[stable_uid(raw)] = raw
+
+    DEBUG_JSON.parent.mkdir(parents=True, exist_ok=True)
+    DEBUG_JSON.write_text(json.dumps(all_raw, indent=2), encoding="utf-8")
+    DEBUG_ENDPOINTS.write_text(EVENTS_URL + "\n", encoding="utf-8")
 
     cal, written = build_calendar(events_by_uid)
-    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_bytes(cal.to_ical())
-    print(f"Wrote {written} unique events to {OUT_PATH}")
+    print(
+        f"Wrote {written} unique events to {OUT_PATH} "
+        f"({len(all_raw)} fetched across {MONTHS_BACK + MONTHS_AHEAD + 1} months)"
+    )
     return 0
 
 
