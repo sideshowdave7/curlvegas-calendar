@@ -19,6 +19,7 @@ The merged raw JSON is dumped to docs/_debug.json for troubleshooting.
 import hashlib
 import json
 import sys
+import time
 from datetime import date
 from pathlib import Path
 
@@ -49,24 +50,43 @@ HEADERS = {
 }
 
 
+MAX_TRIES = 5
+# Delays between attempts: 5, 15, 45, 120 s — total up to ~3 minutes.
+_BACKOFF_BASE = 5
+_BACKOFF_FACTOR = 3
+_BACKOFF_MAX = 120
+
+
 def fetch_events(session, start, end):
     """POST one [start, end) window to the events endpoint and return its events."""
-    resp = session.post(
-        EVENTS_URL,
-        data={
-            "start": start.isoformat(),
-            "end": end.isoformat(),
-            "calview": "dayGridMonth",
-            "types": "",
-        },
-        headers=HEADERS,
-        timeout=60,
-    )
-    resp.raise_for_status()
-    data = resp.json()
-    if not isinstance(data, list):
-        raise ValueError(f"Expected a JSON list of events, got {type(data).__name__}")
-    return data
+    for attempt in range(MAX_TRIES):
+        try:
+            resp = session.post(
+                EVENTS_URL,
+                data={
+                    "start": start.isoformat(),
+                    "end": end.isoformat(),
+                    "calview": "dayGridMonth",
+                    "types": "",
+                },
+                headers=HEADERS,
+                timeout=60,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            if not isinstance(data, list):
+                raise ValueError(f"Expected a JSON list of events, got {type(data).__name__}")
+            return data
+        except (requests.RequestException, ValueError) as exc:
+            if attempt == MAX_TRIES - 1:
+                raise
+            delay = min(_BACKOFF_BASE * (_BACKOFF_FACTOR ** attempt), _BACKOFF_MAX)
+            print(
+                f"  {start:%Y-%m} attempt {attempt + 1}/{MAX_TRIES} failed "
+                f"({exc}); retrying in {delay}s…",
+                file=sys.stderr,
+            )
+            time.sleep(delay)
 
 
 def parse_dt(value):
